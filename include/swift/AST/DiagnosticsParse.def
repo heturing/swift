@@ -344,6 +344,8 @@ ERROR(func_decl_expected_arrow,none,
 ERROR(operator_static_in_protocol,none,
       "operator '%0' declared in protocol must be 'static'",
       (StringRef))
+WARNING(no_more_than_three_paras, none,
+      "a function with more than three parameters", ())
 
 // Enum
 ERROR(expected_lbrace_enum,PointsToFirstBadToken,
